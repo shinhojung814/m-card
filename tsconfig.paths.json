@@ -5,8 +5,14 @@
          "@/*":[
             "src/*"
          ],
+         "@styles/*":[
+            "src/styles/*"
+         ],
          "@components/*":[
             "src/components/*"
+         ],
+         "@shared/*":[
+            "src/components/shared/*"
          ]
       }
    }
