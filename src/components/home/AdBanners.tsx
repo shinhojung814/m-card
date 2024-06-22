@@ -12,7 +12,6 @@ import { getAdBanners } from '@remote/adBanner'
 
 function AdBanners() {
   const { data } = useQuery(['adBanners'], () => getAdBanners())
-  console.log('data', data)
 
   return (
     <Container>

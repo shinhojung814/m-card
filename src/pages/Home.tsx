@@ -9,11 +9,11 @@ import CardList from '@/components/home/CardList'
 function HomePage() {
   useEffect(() => {
     getCards().then((response) => {
-      console.log('response', response)
+      // console.log('response', response)
     })
 
     getAdBanners().then((response) => {
-      console.log('response', response)
+      // console.log('response', response)
     })
   }, [])
 
