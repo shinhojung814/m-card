@@ -4,7 +4,7 @@ export const colorPalette = css`
   :root {
     --white: #fff;
     --black: #212121;
-    --grey: #9e9e9e;
+    --grey: #f0efef;
     --red: #f44336;
     --blue: #2196f3;
     --green: #4caf50;

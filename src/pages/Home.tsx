@@ -1,8 +1,10 @@
 import { useEffect } from 'react'
 
-import Top from '@/components/shared/Top'
 import { getCards } from '@remote/card'
 import { getAdBanners } from '@remote/adBanner'
+import Top from '@/components/shared/Top'
+import AdBanners from '@/components/home/AdBanners'
+import CardList from '@/components/home/CardList'
 
 function HomePage() {
   useEffect(() => {
@@ -18,6 +20,8 @@ function HomePage() {
   return (
     <div>
       <Top title="혜택 좋은 카드" subtitle="혜택이 좋은 카드들" />
+      <AdBanners />
+      <CardList />
     </div>
   )
 }
