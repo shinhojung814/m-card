@@ -49,6 +49,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-prettier", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:5.1.3"],\
           ["eslint-plugin-react", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:7.34.2"],\
           ["firebase", "npm:10.12.2"],\
+          ["framer-motion", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:11.2.11"],\
           ["lodash", "npm:4.17.21"],\
           ["prettier", "npm:3.3.2"],\
           ["react", "npm:18.3.1"],\
@@ -11397,6 +11398,37 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["framer-motion", [\
+      ["npm:11.2.11", {\
+        "packageLocation": "../../../.yarn/berry/cache/framer-motion-npm-11.2.11-e90adc9148-10c0.zip/node_modules/framer-motion/",\
+        "packageDependencies": [\
+          ["framer-motion", "npm:11.2.11"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:11.2.11", {\
+        "packageLocation": "./.yarn/__virtual__/framer-motion-virtual-5f4d8bcc1e/4/.yarn/berry/cache/framer-motion-npm-11.2.11-e90adc9148-10c0.zip/node_modules/framer-motion/",\
+        "packageDependencies": [\
+          ["framer-motion", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:11.2.11"],\
+          ["@emotion/is-prop-valid", null],\
+          ["@types/emotion__is-prop-valid", null],\
+          ["@types/react", "npm:18.3.3"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:18.3.1"],\
+          ["tslib", "npm:2.6.3"]\
+        ],\
+        "packagePeers": [\
+          "@emotion/is-prop-valid",\
+          "@types/emotion__is-prop-valid",\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["fresh", [\
       ["npm:0.5.2", {\
         "packageLocation": "../../../.yarn/berry/cache/fresh-npm-0.5.2-ad2bb4c0a2-10c0.zip/node_modules/fresh/",\
@@ -14037,6 +14069,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-prettier", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:5.1.3"],\
           ["eslint-plugin-react", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:7.34.2"],\
           ["firebase", "npm:10.12.2"],\
+          ["framer-motion", "virtual:4bde3fb829209b70b66ec1c980e64339296cceaa7fcaeff1bc42cb2a3e2bcd80ba0d46ebe75899e3dae8d6e96db01252db146f3f032cbf5e451d3b6850764fd5#npm:11.2.11"],\
           ["lodash", "npm:4.17.21"],\
           ["prettier", "npm:3.3.2"],\
           ["react", "npm:18.3.1"],\

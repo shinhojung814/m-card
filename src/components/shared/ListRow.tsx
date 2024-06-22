@@ -4,6 +4,7 @@ import Flex from './Flex'
 import Text from './Text'
 
 interface ListRowProps {
+  as?: 'div' | 'li'
   contents: React.ReactNode
   left?: React.ReactNode
   right?: React.ReactNode
@@ -11,9 +12,16 @@ interface ListRowProps {
   onClick?: () => void
 }
 
-function ListRow({ contents, left, right, withArrow, onClick }: ListRowProps) {
+function ListRow({
+  as = 'li',
+  contents,
+  left,
+  right,
+  withArrow,
+  onClick,
+}: ListRowProps) {
   return (
-    <Flex as="li" align="center" css={listRowContainerStyles} onClick={onClick}>
+    <Flex as={as} align="center" css={listRowContainerStyles} onClick={onClick}>
       <Flex css={listRowLeftStyles}>{left}</Flex>
       <Flex css={listRowContentsStyles}>{contents}</Flex>
       <Flex>{right}</Flex>
