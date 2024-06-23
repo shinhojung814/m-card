@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { Global } from '@emotion/react'
 
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import { Global } from '@emotion/react'
-import globalStyles from './styles/globalStyles'
-import { AlertContextProvider } from './contexts/AlertContext'
+import globalStyles from '@styles/globalStyles'
+import { AlertContextProvider } from '@contexts/AlertContext'
+import AuthGuard from '@components/auth/AuthGuard'
 
 const client = new QueryClient({
   defaultOptions: {},
@@ -20,7 +21,9 @@ root.render(
     <Global styles={globalStyles} />
     <QueryClientProvider client={client}>
       <AlertContextProvider>
-        <App />
+        <AuthGuard>
+          <App />
+        </AuthGuard>
       </AlertContextProvider>
     </QueryClientProvider>
   </React.StrictMode>,

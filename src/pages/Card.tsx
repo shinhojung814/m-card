@@ -33,6 +33,7 @@ function CardPage() {
         {benefit.map((text, index) => {
           return (
             <motion.li
+              key={index}
               initial={{
                 opacity: 0,
                 translateX: -90,
