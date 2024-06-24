@@ -1,5 +1,5 @@
 function BasicInfo() {
-    return <></>
+  return <></>
 }
 
 export default BasicInfo

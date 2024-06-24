@@ -1,5 +1,5 @@
 function CardInfo() {
-    return <></>
+  return <></>
 }
 
 export default CardInfo
