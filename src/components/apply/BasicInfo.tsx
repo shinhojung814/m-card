@@ -10,20 +10,20 @@ import { ApplyValues } from '@models/apply'
 type InfoValues = Pick<ApplyValues, 'salary' | 'creditScore' | 'payDate'>
 
 function BasicInfo({ onNext }: { onNext: (infoValues: InfoValues) => void }) {
-  const [infoValues, setInfoValues] = useState<InfoValues>({
+  const [basicInfoValues, setBasicInfoValues] = useState<InfoValues>({
     salary: '',
     creditScore: '',
     payDate: '',
   })
 
   const handleInfoChange = useCallback((e: ChangeEvent<HTMLSelectElement>) => {
-    setInfoValues((prevValues) => ({
+    setBasicInfoValues((prevValues) => ({
       ...prevValues,
       [e.target.name]: e.target.value,
     }))
   }, [])
 
-  const allInfoSelected = Object.values(infoValues).every((value) => value)
+  const allInfoSelected = Object.values(basicInfoValues).every((value) => value)
 
   return (
     <Flex direction="column" css={basicInfoContainerStyles}>
@@ -32,7 +32,7 @@ function BasicInfo({ onNext }: { onNext: (infoValues: InfoValues) => void }) {
         label="연소득"
         options={SALARIES}
         placeholder={SALARIES[0].label}
-        value={infoValues.salary}
+        value={basicInfoValues.salary}
         onChange={handleInfoChange}
       />
       <Select
@@ -40,7 +40,7 @@ function BasicInfo({ onNext }: { onNext: (infoValues: InfoValues) => void }) {
         label="신용점수"
         options={CREDIT_SCORES}
         placeholder={CREDIT_SCORES[0].label}
-        value={infoValues.creditScore}
+        value={basicInfoValues.creditScore}
         onChange={handleInfoChange}
       />
       <Select
@@ -48,13 +48,13 @@ function BasicInfo({ onNext }: { onNext: (infoValues: InfoValues) => void }) {
         label="결제일"
         options={PAY_DATES}
         placeholder={PAY_DATES[0].label}
-        value={infoValues.payDate}
+        value={basicInfoValues.payDate}
         onChange={handleInfoChange}
       />
       <FixedBottomButton
         label="다음"
         onClick={() => {
-          onNext(infoValues)
+          onNext(basicInfoValues)
         }}
         disabled={allInfoSelected === false}
       />
