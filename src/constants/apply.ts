@@ -1,4 +1,4 @@
-import { Terms } from '@models/apply'
+import { Terms, Option } from '@models/apply'
 
 export const TERMS = [
   {
@@ -11,3 +11,19 @@ export const TERMS = [
     link: 'https://www.google.com',
   },
 ] as Terms[]
+
+export const SALARIES = [
+  { label: '600만원 ~ 5,000만원', value: '600만원 ~ 5,000만원' },
+  { label: '5,000만원 ~ 1억원', value: '5,000만원 ~ 1억원' },
+  { label: '1억원 초과', value: '1억원 초과' },
+] as Option[]
+
+export const CREDIT_SCORES = [
+  { label: '600점 이상', value: '600점 이상' },
+  { label: '600점 미만', value: '600점 미만' },
+] as Option[]
+
+export const PAY_DATES = [
+  { label: '1일', value: '1일' },
+  { label: '25일', value: '25일' },
+] as Option[]
