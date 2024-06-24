@@ -4,9 +4,9 @@ import { useInfiniteQuery } from 'react-query'
 import { flatten } from 'lodash'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
-import { getCards } from '@/remote/card'
-import ListRow from '../shared/ListRow'
-import Badge from '../shared/Badge'
+import { getCards } from '@remote/card'
+import ListRow from '@shared/ListRow'
+import Badge from '@shared/Badge'
 
 function CardList() {
   const {

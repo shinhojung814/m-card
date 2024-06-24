@@ -2,9 +2,9 @@ import { useEffect } from 'react'
 
 import { getCards } from '@remote/card'
 import { getAdBanners } from '@remote/adBanner'
-import Top from '@/components/shared/Top'
-import AdBanners from '@/components/home/AdBanners'
-import CardList from '@/components/home/CardList'
+import Top from '@shared/Top'
+import AdBanners from '@components/home/AdBanners'
+import CardList from '@components/home/CardList'
 
 function HomePage() {
   useEffect(() => {

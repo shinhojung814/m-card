@@ -2,7 +2,7 @@ import { CSSProperties } from 'react'
 import styled from '@emotion/styled'
 
 import { colors, Colors } from '@styles/colorPalette'
-import { typographyMap, Typography } from '@/styles/typography'
+import { typographyMap, Typography } from '@styles/typography'
 
 interface TextProps {
   display?: CSSProperties['display']

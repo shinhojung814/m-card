@@ -4,7 +4,7 @@ import { css } from '@emotion/react'
 import Flex from '@shared/Flex'
 import Text from '@shared/Text'
 import Spacing from '@shared/Spacing'
-import { colors } from '@/styles/colorPalette'
+import { colors } from '@styles/colorPalette'
 
 function Agreement({ children }: { children: React.ReactNode }) {
   return (
@@ -70,6 +70,7 @@ Agreement.Description = AgreementDescription
 
 const agreementContainerStyles = css`
   padding: 24px;
+  gap: 8px;
 
   & li {
     cursor: pointer;

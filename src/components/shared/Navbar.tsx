@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { signOut } from 'firebase/auth'
 import { css } from '@emotion/react'
 
-import Flex from './Flex'
-import Button from './Button'
-import { colors } from '@/styles/colorPalette'
+import Flex from '@shared/Flex'
+import Button from '@shared/Button'
+import { colors } from '@styles/colorPalette'
 import useUser from '@hooks/auth/useUser'
 import { auth } from '@remote/firebase'
 

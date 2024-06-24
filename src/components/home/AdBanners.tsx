@@ -7,7 +7,7 @@ import 'swiper/css'
 
 import Flex from '@shared/Flex'
 import Text from '@shared/Text'
-import { colors } from '@/styles/colorPalette'
+import { colors } from '@styles/colorPalette'
 import { getAdBanners } from '@remote/adBanner'
 
 function AdBanners() {

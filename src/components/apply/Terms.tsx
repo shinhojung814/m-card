@@ -1,7 +1,9 @@
 import { useCallback, useState, MouseEvent } from 'react'
 
 import { TERMS } from '@constants/apply'
-import { ApplyValues } from '@/models/apply'
+import { ApplyValues } from '@models/apply'
+import Flex from '@shared/Flex'
+import Spacing from '@shared/Spacing'
 import Agreement from '@shared/Agreement'
 import FixedBottomButton from '@shared/FixedBottomButton'
 
@@ -34,11 +36,12 @@ function Terms({ onNext }: { onNext: (terms: ApplyValues['terms']) => void }) {
   )
 
   return (
-    <div>
+    <Flex direction="column">
       <Agreement>
         <Agreement.Title checked={allTermsAgreed} onChange={handleAllAgreed}>
           약관에 모두 동의
         </Agreement.Title>
+        <Spacing direction="vertical" size={12} />
         {TERMS.map(({ id, title, link }) => {
           return (
             <Agreement.Description
@@ -64,7 +67,7 @@ function Terms({ onNext }: { onNext: (terms: ApplyValues['terms']) => void }) {
         }}
         disabled={allTermsAgreed === false}
       />
-    </div>
+    </Flex>
   )
 }
 

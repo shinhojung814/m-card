@@ -1,4 +1,4 @@
-import { User } from './user'
+import { User } from '@models/user'
 
 export interface Terms {
   id: string
@@ -17,9 +17,17 @@ export interface ApplyValues {
   isMaster: boolean
   isRf: boolean
   isHipass: boolean
+  status: keyof typeof APPLY_STATUS
 }
 
 export interface Option {
   label: string
   value: string | number | undefined
 }
+
+export const APPLY_STATUS = {
+  READY: 'READY',
+  IN_PROGRESS: 'IN_PROGRESS',
+  COMPLETE: 'COMPLETE',
+  REJECTED: 'REJECTED',
+} as const

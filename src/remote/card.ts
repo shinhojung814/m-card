@@ -8,10 +8,10 @@ import {
   getDocs,
   QuerySnapshot,
 } from 'firebase/firestore'
-import { store } from './firebase'
 
-import { COLLECTIONS } from '@/constants'
-import { Card } from '@/models/card'
+import { store } from '@remote/firebase'
+import { COLLECTIONS } from '@constants/index'
+import { Card } from '@models/card'
 
 export async function getCards(pageParam?: QuerySnapshot<Card>) {
   const cardQuery =

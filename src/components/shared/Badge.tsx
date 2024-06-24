@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 import Text from '@shared/Text'
-import { colors } from '@/styles/colorPalette'
+import { colors } from '@styles/colorPalette'
 
 interface BadgeProps {
   label: string

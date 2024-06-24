@@ -5,7 +5,7 @@ import { collection, doc, setDoc } from 'firebase/firestore'
 import { auth, store } from '@remote/firebase'
 import Form from '@components/signup/Form'
 import { FormValues } from '@models/signup'
-import { COLLECTIONS } from '@/constants'
+import { COLLECTIONS } from '@constants/index'
 
 function SignupPage() {
   const navigate = useNavigate()

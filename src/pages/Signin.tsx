@@ -5,7 +5,7 @@ import { FirebaseError } from 'firebase/app'
 
 import { auth } from '@remote/firebase'
 import Form from '@components/signin/Form'
-import { FormValues } from '@/models/signin'
+import { FormValues } from '@models/signin'
 import { useAlertContext } from '@contexts/AlertContext'
 
 function SigninPage() {
@@ -38,7 +38,7 @@ function SigninPage() {
         })
       }
     },
-    [open],
+    [open, navigate],
   )
 
   return (
