@@ -13,7 +13,7 @@ function ApplyDonePage() {
     <Flex>
       <Text>
         {success === 'true'
-          ? '카드가 발급되었습니다.'
+          ? '카드 발급이 완료되었습니다.'
           : '카드 발급에 실패했습니다.'}
       </Text>
       <FixedBottomButton
