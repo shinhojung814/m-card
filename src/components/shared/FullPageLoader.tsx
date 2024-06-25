@@ -23,7 +23,7 @@ function FullPageLoader({ message }: { message?: string }) {
         />
         {message != null ? (
           <>
-            <Spacing size={120} />
+            <Spacing size={40} />
             <Text typography="t4" bold={true}>
               {message}
             </Text>
