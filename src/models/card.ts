@@ -14,4 +14,9 @@ export interface AdBanner {
   title: string
   description: string
   link: string
+  benefit?: string[]
+  promotion?: {
+    title: string
+    terms: string
+  }
 }

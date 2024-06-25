@@ -5,7 +5,7 @@ import Text from '@shared/Text'
 
 interface TopProps {
   title: string
-  subtitle: string
+  subtitle: string | null
 }
 
 function Top({ title, subtitle }: TopProps) {

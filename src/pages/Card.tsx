@@ -46,13 +46,20 @@ function CardPage() {
   const { name, corpName, promotion, tags, benefit } = data
 
   const subtitle =
-    promotion != null ? removeHtmlTags(promotion.title) : tags.join(', ')
+    promotion != null
+      ? removeHtmlTags(promotion.title)
+      : benefit
+        ? tags.join(', ')
+        : null
 
   return (
     <div>
-      <Top title={`${corpName} ${name}`} subtitle={subtitle} />
+      <Top
+        title={`${corpName} ${name}`}
+        subtitle={subtitle ? subtitle : null}
+      />
       <ul>
-        {benefit.map((text, index) => {
+        {benefit?.map((text, index) => {
           return (
             <motion.li
               key={index}
