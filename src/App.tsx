@@ -9,6 +9,7 @@ import SignupPage from '@pages/Signup'
 import SigninPage from '@pages/Signin'
 import ApplyPage from '@pages/Apply'
 import ApplyDonePage from '@pages/ApplyDone'
+import MyPage from '@pages/My'
 import ScrollToTop from '@shared/ScrollToTop'
 import PrivateRoute from '@components/auth/PrivateRoute'
 
@@ -38,6 +39,14 @@ function App() {
           element={
             <PrivateRoute>
               <ApplyDonePage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/my"
+          element={
+            <PrivateRoute>
+              <MyPage />
             </PrivateRoute>
           }
         />
