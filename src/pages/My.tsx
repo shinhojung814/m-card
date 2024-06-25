@@ -9,7 +9,7 @@ import MyImage from '@components/my/MyImage'
 import { auth } from '@remote/firebase'
 import useUser from '@hooks/auth/useUser'
 
-function MyPage({}) {
+function MyPage() {
   const user = useUser()
 
   const handleSignout = useCallback(() => {

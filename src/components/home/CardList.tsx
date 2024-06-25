@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useInfiniteQuery } from 'react-query'
-import { flatten } from 'lodash'
+import flatten from 'lodash.flatten'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
 import { getCards } from '@remote/card'
@@ -25,6 +25,7 @@ function CardList() {
       getNextPageParam: (snapshot) => {
         return snapshot.lastVisible
       },
+      suspense: true,
     },
   )
 
@@ -49,7 +50,7 @@ function CardList() {
         hasMore={hasNextPage}
         next={loadMoreData}
         scrollThreshold="100px"
-        loader={<></>}
+        loader={<ListRow.Skeleton />}
       >
         {cards.map((card, index) => {
           return (

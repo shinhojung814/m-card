@@ -2,7 +2,6 @@ import { parse } from 'qs'
 
 import Flex from '@shared/Flex'
 import Text from '@shared/Text'
-import Spacing from '@shared/Spacing'
 import FixedBottomButton from '@shared/FixedBottomButton'
 
 function ApplyDonePage() {
